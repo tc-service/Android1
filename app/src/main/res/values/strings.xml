@@ -5,4 +5,6 @@
     <string name="Param2">Внесите параметр 2</string>
     <string name="result">Результат</string>
     <string name="resultOut">Вывод результата</string>
+    <string name="checkbox1">Настройки 1</string>
+    <string name="checkbox2">Настройки 2</string>
 </resources>
