@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android1</string>
+    <string name="projectName">Android1 project</string>
+    <string name="Param1">Внесите параметр 1</string>
+    <string name="Param2">Внесите параметр 2</string>
+    <string name="result">Результат</string>
+    <string name="resultOut">Вывод результата</string>
+</resources>

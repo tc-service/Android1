@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="projName">18sp</dimen>
+    <dimen name="tvText">18sp</dimen>
+    <dimen name="eTextIn">18sp</dimen>
+    <dimen name="eTextOut">26sp</dimen>
+</resources>
