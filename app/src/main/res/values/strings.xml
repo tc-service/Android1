@@ -7,4 +7,6 @@
     <string name="resultOut">Вывод результата</string>
     <string name="checkbox1">Настройки 1</string>
     <string name="checkbox2">Настройки 2</string>
+    <string name="textOn">Вкл</string>
+    <string name="textOff">Выкл</string>
 </resources>
