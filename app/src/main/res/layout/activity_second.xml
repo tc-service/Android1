@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layGround"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kisspng_paper"
+    android:gravity="center_horizontal|top"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/layIn"
+        android:layout_width="300dp"
+        android:layout_height="638dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:gravity="bottom|center|center_vertical"
+            android:text="@string/singUp"
+            android:textSize="@dimen/eTextOut"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDataName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="bottom|center"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tvText"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:gravity="center"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/eTextOut"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvDataPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="@string/phone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tvText"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/eTextOut"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvDataPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/passp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tvText"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="@dimen/eTextOut" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tvText"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/eMail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tvText"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/eTextOut" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="@string/bt_confirm"
+            android:textSize="@dimen/tvText" />
+
+    </LinearLayout>
+
+</LinearLayout>
