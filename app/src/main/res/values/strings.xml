@@ -16,4 +16,5 @@
     <string name="password">Придумайте пароль</string>
     <string name="eMail">Ваш e-mail</string>
     <string name="bt_confirm">Подтвердить</string>
+    <string name="change">Switch</string>
 </resources>

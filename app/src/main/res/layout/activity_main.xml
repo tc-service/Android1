@@ -14,7 +14,8 @@
         android:id="@+id/linear2"
         android:layout_width="match_parent"
         android:layout_height="74dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
         <TextView
             android:id="@+id/tvProjName"
             android:layout_width="match_parent"
@@ -33,7 +34,7 @@
             android:id="@+id/switch1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Switch" />
+            android:text="@string/change" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linear3"
