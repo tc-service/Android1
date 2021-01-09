@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/blue_sky"
     tools:context=".MainActivity"
-    android:padding="15dp">
+    android:padding="@dimen/paddingMain">
 
     <LinearLayout
         android:id="@+id/linear2"
@@ -155,8 +155,8 @@
 
         <ImageView
             android:id="@+id/ivTogg"
-            android:layout_width="192dp"
-            android:layout_height="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_radio_button_on" />
 
