@@ -5,4 +5,16 @@
     <string name="Param2">Внесите параметр 2</string>
     <string name="result">Результат</string>
     <string name="resultOut">Вывод результата</string>
+    <string name="checkbox1">Настройки 1</string>
+    <string name="checkbox2">Настройки 2</string>
+    <string name="textOn">Вкл</string>
+    <string name="textOff">Выкл</string>
+    <string name="singUp">Зарегистрируйтесь</string>
+    <string name="name">Введите ваше имя</string>
+    <string name="phone">Ваш номер телефона</string>
+    <string name="passp">Номер ваего дома</string>
+    <string name="password">Придумайте пароль</string>
+    <string name="eMail">Ваш e-mail</string>
+    <string name="bt_confirm">Подтвердить</string>
+    <string name="change">switch</string>
 </resources>
