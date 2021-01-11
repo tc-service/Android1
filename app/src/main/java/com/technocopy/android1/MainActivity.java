@@ -11,10 +11,13 @@ import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.technocopy.android1.R.drawable.ic_launcher_on_foreground;
+
 public class MainActivity extends AppCompatActivity {
     ToggleButton toggleButton;
     ImageView imageView;
 
+    @SuppressLint({"UseSwitchCompatOrMaterialCode", "UseCompatLoadingForDrawables"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
         toggleButton = findViewById(R.id.toggleButton);
         imageView = findViewById(R.id.ivTogg);
-        imageView.setImageDrawable(getDrawable(R.drawable.ic_launcher_on_foreground));
+        imageView.setImageDrawable(getDrawable(ic_launcher_on_foreground));
         toggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (toggleButton.isChecked()) {
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_baseline_radio_button_off));
                 } else {
-                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher_on_foreground));
+                    imageView.setImageDrawable(getResources().getDrawable(ic_launcher_on_foreground));
                 }
             }
         });
