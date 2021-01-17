@@ -9,4 +9,6 @@
     <dimen name="topPadding">16dp</dimen>
     <dimen name="screedPadding">8dp</dimen>
     <dimen name="buttonPadding">8dp</dimen>
+    <dimen name="paddungLayIn">30dp</dimen>
+    <dimen name="paddingMain">15dp</dimen>
 </resources>
