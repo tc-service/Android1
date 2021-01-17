@@ -4,4 +4,6 @@
     <dimen name="tvText">18sp</dimen>
     <dimen name="eTextIn">18sp</dimen>
     <dimen name="eTextOut">26sp</dimen>
+    <dimen name="paddungLayIn">30dp</dimen>
+    <dimen name="paddingMain">15dp</dimen>
 </resources>
