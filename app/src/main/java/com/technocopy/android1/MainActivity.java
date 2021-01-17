@@ -11,10 +11,13 @@ import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.technocopy.android1.R.drawable.ic_launcher_on_foreground;
+
 public class MainActivity extends AppCompatActivity {
     ToggleButton toggleButton;
     ImageView imageView;
 
+    @SuppressLint({"UseSwitchCompatOrMaterialCode", "UseCompatLoadingForDrawables"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

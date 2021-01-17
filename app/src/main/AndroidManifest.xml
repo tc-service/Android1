@@ -12,7 +12,9 @@
         <activity android:name=".SecondActivity">
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".CalculatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
