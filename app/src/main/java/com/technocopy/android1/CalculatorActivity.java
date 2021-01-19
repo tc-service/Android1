@@ -14,6 +14,7 @@ public class CalculatorActivity extends AppCompatActivity {
 //            buttonDivide, buttonMult, buttonMinus, buttonPlus, buttonEqual,
 //            button1, button2, button3, button4, button5, button6, button7, button8, button9, button0;
 //    TextView txt;
+    private  CalculatorLogic calculatorLogic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,22 @@ public class CalculatorActivity extends AppCompatActivity {
         int[] actId = new int[]{
                 R.id.buttonBrackets, R.id.buttonProcent, R.id.buttonOposit, R.id.buttonDot, R.id.buttonDivide,
                 R.id.buttonMult, R.id.buttonPlus, R.id.buttonMinus
+        };
+        calculatorLogic = new CalculatorLogic();
+
+        // обработка нажатий
+        View.OnClickListener buttonClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calculatorLogic.onNumPress(v.getId()); // передаем id нажатой кнопки
+            }
+        };
+
+        View.OnClickListener actionClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calculatorLogic.onActionPress(v.getId()); // передаем id действия
+            }
         };
     }
 
