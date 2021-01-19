@@ -45,12 +45,9 @@ public class CalculatorActivity extends AppCompatActivity {
             }
         };
 
-        View.OnClickListener actionClick = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calculatorLogic.onActionPress(v.getId()); // передаем id действия
-                txt.setText(calculatorLogic.getText());
-            }
+        View.OnClickListener actionClick = v -> {
+            calculatorLogic.onActionPress(v.getId()); // передаем id действия
+            txt.setText(calculatorLogic.getText());
         };
 
         // передаем в класс логики id нажатой кнопки, опрелелив ее в массиве
@@ -58,10 +55,9 @@ public class CalculatorActivity extends AppCompatActivity {
         for ( int i = 0; i < numId.length; i++ ){
             findViewById(numId[i]).setOnClickListener(numButtonClick);
         }
-        for ( int i = 0; i < numId.length; i++ ){
+        for ( int i = 0; i < actId.length; i++ ) {
             findViewById(actId[i]).setOnClickListener(actionClick);
         }
-
     }
 
 
