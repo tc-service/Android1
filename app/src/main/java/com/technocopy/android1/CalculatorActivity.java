@@ -13,7 +13,7 @@ public class CalculatorActivity extends AppCompatActivity {
 //    private Button buttonClear, buttonBrackets, buttonProcent, buttonOposit, buttonDot,
 //            buttonDivide, buttonMult, buttonMinus, buttonPlus, buttonEqual,
 //            button1, button2, button3, button4, button5, button6, button7, button8, button9, button0;
-//    TextView txt;
+    TextView txt;
     private  CalculatorLogic calculatorLogic;
 
     @Override
@@ -33,13 +33,15 @@ public class CalculatorActivity extends AppCompatActivity {
                 R.id.buttonBrackets, R.id.buttonProcent, R.id.buttonOposit, R.id.buttonDot, R.id.buttonDivide,
                 R.id.buttonMult, R.id.buttonPlus, R.id.buttonMinus
         };
+        txt = findViewById(R.id.tvOut);
         calculatorLogic = new CalculatorLogic();
 
         // обработка нажатий
-        View.OnClickListener buttonClick = new View.OnClickListener() {
+        View.OnClickListener numButtonClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calculatorLogic.onNumPress(v.getId()); // передаем id нажатой кнопки
+                txt.setText(calculatorLogic.getText());
             }
         };
 
@@ -47,9 +49,21 @@ public class CalculatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 calculatorLogic.onActionPress(v.getId()); // передаем id действия
+                txt.setText(calculatorLogic.getText());
             }
         };
+
+        // передаем в класс логики id нажатой кнопки, опрелелив ее в массиве
+
+        for ( int i = 0; i < numId.length; i++ ){
+            findViewById(numId[i]).setOnClickListener(numButtonClick);
+        }
+        for ( int i = 0; i < numId.length; i++ ){
+            findViewById(actId[i]).setOnClickListener(actionClick);
+        }
+
     }
+
 
 
 

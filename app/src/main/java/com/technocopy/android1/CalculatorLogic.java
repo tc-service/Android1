@@ -23,7 +23,7 @@ public class CalculatorLogic {
 
 
     // нажатие на кнопки действий
-    void onActionPress(int actoinId){
+    public void onActionPress(int actoinId){
 
     }
 
@@ -33,5 +33,9 @@ public class CalculatorLogic {
         argFirstInput,
         argSecondInput,
         result
+    }
+
+    public String getText(){
+        return inputString.toString();
     }
 }
