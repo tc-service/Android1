@@ -64,8 +64,6 @@ public class CalculatorActivity extends AppCompatActivity {
     }
 
 
-
-
 //    private void findView() {
 //        Button button0 = findViewById(R.id.button0);
 //        Button button1 = findViewById(R.id.button1);

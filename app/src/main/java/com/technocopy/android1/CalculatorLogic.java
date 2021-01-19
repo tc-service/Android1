@@ -24,8 +24,8 @@ public class CalculatorLogic {
     // нажатие на кнопки с цифрами
     public void onNumPress(int id) {
         if (state == State.result) {
-            state = State.argFirstInput;  // если на экраен результат операции, то снова вводим первое число
-//            inputString.setLength(0);
+            state = State.argFirstInput;  // если на экраене результат операции, то снова вводим первое число
+            inputString.setLength(0);
 
         }
         // ограничиваем ввод чисел 15 цифрами
@@ -107,9 +107,7 @@ public class CalculatorLogic {
                 case R.id.buttonMinus:
                     action = R.id.buttonMinus;
                     break;
-                case R.id.buttonEqual:
-                    action = R.id.buttonEqual;
-                    break;
+
             }
 
         }
