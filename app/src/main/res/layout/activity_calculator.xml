@@ -56,7 +56,7 @@
         android:layout_width="@dimen/buttonSize"
         android:layout_height="@dimen/buttonSize"
         android:layout_marginStart="@dimen/buttonPadding"
-        android:text="@string/multy"
+        android:text="@string/divide"
         app:layout_constraintEnd_toEndOf="@+id/tvOut"
         app:layout_constraintStart_toEndOf="@+id/buttonProcent"
         app:layout_constraintTop_toTopOf="@+id/buttonProcent" />
@@ -97,8 +97,8 @@
         android:id="@+id/buttonMult"
         android:layout_width="@dimen/buttonSize"
         android:layout_height="@dimen/buttonSize"
-        android:layout_marginStart="@dimen/buttonPadding"
-        android:text="@string/divide"
+        android:layout_marginStart="@dimen/buttonPadding
+        android:text="@string/multy"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/buttonDivide" />
 
