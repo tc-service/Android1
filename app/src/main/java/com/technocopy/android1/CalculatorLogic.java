@@ -1,10 +1,12 @@
 package com.technocopy.android1;
 
+import android.os.Parcelable;
+
 public class CalculatorLogic {
 
-    private StringBuilder inputString = new StringBuilder();
-    private int argFirst;
-    private int argSecond;
+    private final StringBuilder inputString = new StringBuilder();
+    private float argFirst;
+    private float argSecond;
     private State state;
     private int action;
 
@@ -14,7 +16,6 @@ public class CalculatorLogic {
         argSecondInput,
         result
     }
-
 
     // конструктор для поля с первым числом
     public CalculatorLogic() {
@@ -26,7 +27,6 @@ public class CalculatorLogic {
         if (state == State.result) {
             state = State.argFirstInput;  // если на экраене результат операции, то снова вводим первое число
             inputString.setLength(0);
-
         }
         // ограничиваем ввод чисел 15 цифрами
         if (inputString.length() < 15) {
@@ -63,15 +63,17 @@ public class CalculatorLogic {
                 case R.id.button9:
                     inputString.append("9");
                     break;
+                case R.id.buttonDot:
+                    inputString.append(".");
+                    break;
             }
         }
     }
 
-
     // нажатие на кнопки действий
     public void onActionPress(int actoinId) {
         if (actoinId == R.id.buttonEqual && state == State.argSecondInput) {
-            argSecond = Integer.parseInt(inputString.toString());
+            argSecond = Float.parseFloat(inputString.toString());
             state = State.result;
             inputString.setLength(0);
             switch (action) {
@@ -89,17 +91,16 @@ public class CalculatorLogic {
                     break;
             }
         } else if (inputString.length() > 0 && state == State.argFirstInput) {
-            argFirst = Integer.parseInt(inputString.toString());
+            argFirst = Float.parseFloat(inputString.toString());
             state = State.argSecondInput;
             inputString.setLength(0);
-//            action = actoinId;
 
             switch (actoinId) {
                 case R.id.buttonDivide:
                     action = R.id.buttonDivide;
                     break;
                 case R.id.buttonMult:
-                    action = R.id.buttonDivide;
+                    action = R.id.buttonMult;
                     break;
                 case R.id.buttonPlus:
                     action = R.id.buttonPlus;
@@ -107,7 +108,6 @@ public class CalculatorLogic {
                 case R.id.buttonMinus:
                     action = R.id.buttonMinus;
                     break;
-
             }
 
         }
