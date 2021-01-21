@@ -1,5 +1,4 @@
 package com.technocopy.android1;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,13 +24,13 @@ public class CalculatorActivity extends AppCompatActivity {
 
         int[] numId = new int[]{
         R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
-                R.id.button7, R.id.button8, R.id.button9
+                R.id.button7, R.id.button8, R.id.button9,R.id.buttonOposit, R.id.buttonDot
         };
         // представим id кнопок действий в виде массива целых чисел
 
         int[] actId = new int[]{
-                R.id.buttonBrackets, R.id.buttonProcent, R.id.buttonOposit, R.id.buttonDot, R.id.buttonDivide,
-                R.id.buttonMult, R.id.buttonPlus, R.id.buttonMinus, R.id.buttonEqual
+                R.id.buttonBrackets, R.id.buttonOposit, R.id.buttonProcent, R.id.buttonDivide,
+                R.id.buttonMult, R.id.buttonPlus, R.id.buttonMinus, R.id.buttonEqual, R.id.buttonClear
         };
         txt = findViewById(R.id.tvOut);
         calculatorLogic = new CalculatorLogic();
